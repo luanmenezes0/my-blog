@@ -18,7 +18,6 @@ This starter contains everything you need to get up and running with [SvelteKit]
 - 🔎 **Basic SEO** for blog posts (_strongly recommend checking that out for yourself, though_)
 - 📰 **RSS feed** set up and ready to go (_though it could also likely benefit from some optimization_); just update `src/lib/config.js`
 
-
 ## Installation
 
 Clone or download [this repo](https://github.com/josh-collinsworth/sveltekit-blog-starter), then install the dependencies and run the dev server.
@@ -34,11 +33,9 @@ npm run dev -- --open
 
 That should get a dev server up and running (assuming you have npm and Node installed already). Any saved changes to components and styles should auto-refresh blazingly fast.
 
-
 ## Customization
 
 Be sure to update `src/lib/config.js` to reflect your site's domain, preferences, etc. This is where the nav menu can be updated, as well as where details for the RSS feed will be pulled in.
-
 
 ## Adding new posts
 
@@ -52,18 +49,15 @@ If you want to use other frontmatter properties in the template (or just modify 
 
 The starter will still work without `date` properties in your posts, but the sorting won't be right.
 
-
 ### Pagination
 
 Pagination automatically kicks in once you have more posts than the `postsPerPage` option in `src/lib/config.js`. This means you won't see the pagination right away unless you either change `postsPerPage` to a very low number, or add several more Markdown files to the `src/lib/posts` folder.
-
 
 ### RSS
 
 This starter also includes a basic RSS feed. It's very minimal, so you may want to tweak it depending on your XML feed needs, but it _does_ work out of the box.
 
 Update the `config` details in `src/lib/config.js` to get your site's unique info correct. (You could also pull this info in other places, or add to it, to keep things consistent, but that's up to you.)
-  
 
 ## Sass
 
@@ -71,20 +65,17 @@ Update the `config` details in `src/lib/config.js` to get your site's unique inf
 
 I didn't use component `<style>` blocks because, while component-based scoped CSS is very nice, it can also be hard to track down and update. Since this is a starter, I felt it was best to keep all the styles together in one place, and let you, the author, decide whether you want to keep them as they are, move to scoped CSS instead, or use a mixture.
 
-
 ## Site navigation menus
 
 To add or remove pages from the site's navigation menu (in both the header and footer), edit the `navItems` array in `src/lib/config.js`. Items there will be automatically added to the main menu in the header and footer, and the mobile nav menu. They'll also have proper classes and ARIA attributes to show when they're the current page.
-
 
 ## Colors and Fonts
 
 This starter has a default color palette (Credit to [coolors.co](https://coolors.co/palettes/trending)) and fonts, but you can easily override those here:
 
 **Colors:** `src/lib/assets/scss/_vars.scss`
-  
-**Fonts:** `src/app.html` for the links, `_vars.scss` for the font names.
 
+**Fonts:** `src/app.html` for the links, `_vars.scss` for the font names.
 
 ## Components
 
@@ -92,13 +83,11 @@ This starter includes only a handful of structural components, for the header, f
 
 You're welcome and encouraged to create your own (using them in Markdown is fun!); I just didn't want to push authors too far in any component direction right off the bat.
 
-
 ## Static files
 
 Things that should just live in the site root of the finished site (like a `robots.txt` file, favicon, or maybe images) should go in the `static` folder. If you link to them, use the root path (e.g., `/images/my.png`, not `../static/images/my.png`).
 
 (Placeholder images credit [Unsplash](https://unsplash.com); photographer names are in the file names.)
-
 
 ## Building and deploying
 
@@ -111,7 +100,6 @@ npm run build
 That should do it on a host like Netlify or Vercel. Or, if you prefer, you can run `npm run build` to generate the static files, then upload those (they'll be generated into a `build` folder).
 
 Use `npm run preview` _after_ a build to preview the built site.
-
 
 ## Further documentation
 
