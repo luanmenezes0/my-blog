@@ -62,3 +62,7 @@
 	{/key}
 	<Footer />
 </div>
+
+<style lang="scss" global>
+	@import '../lib/assets/scss/global.scss';
+</style>
